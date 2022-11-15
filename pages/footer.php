@@ -1,4 +1,4 @@
-<?php require_once("./other/brojac_posjeta.php") ?>
+<?php require_once("./other/visit_counter.php") ?>
 
 <div class="container">
     <div class="row">

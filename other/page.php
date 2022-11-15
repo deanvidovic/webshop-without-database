@@ -28,7 +28,7 @@ if(isset($page)) {
 
 if($page == "cart" || $page == "contact") {
     if(!isset($_SESSION["username"]) || $_SESSION["username"] != "admin") {
-        die(header("Location: index.php?page=potrebna_prijava"));
+        die(header("Location: index.php?page=need_to_login"));
     }
 }
 

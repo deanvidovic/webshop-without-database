@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once("./other/brojac_posjeta.php");
+require_once("./other/visit_counter.php");
 require_once("./other/items.php");
 addBrojacPosjeta();
 
