@@ -5,15 +5,15 @@
         <?php
         require_once("./other/items.php");
         require_once("./class/Artikl.php");
+
         $ukupnaCijena = 0;
-
-
+        $arrOfEcho = array();
+        
+        
         if(isset($_COOKIE["cart"])) {  
             foreach ($cart as $id) {
                 foreach ($artikli as $a) {
                     if($id == $a->get_id()) {
-                        $ukupnaCijena += $a->get_cijena();
-                        //print_r($_GET);
                         echo 
                         "
                         <div class='col-xxl-4 col-xl-4 col-lg-4'>
@@ -23,7 +23,8 @@
                                     <img src='".$a->get_url()."'><br>
                                     <b>Name: </b>" . $a->get_naziv() . " <br>
                                     <b>Price: </b>" . $a->ispis_cijena() . "<br>
-                                    <!--<hr>
+                                    <!--<b>Quantity: </b> <span id='pov'>1</span>x<br>
+                                    <hr>
                                     <div>
                                         <button class='btn btn-primary' onclick='izbrisiIzKosarice(". $a->get_id().", this)'>Remove</button>
                                     </div>-->
@@ -33,9 +34,11 @@
         
                         ";
                     }
+
                 }
-            } 
-        } 
+            }
+        }
+              
 
         else {
             echo "<div class='row text-center'> <b>No products in cart.</b><div>";

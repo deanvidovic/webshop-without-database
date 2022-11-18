@@ -3,8 +3,9 @@ function dodajUKosaricu(id) {
   xhttp.onload = function () {
     alert("Artikl added!");
   }
-  xhttp.open("GET", "index.php?page=cart&action=add&id="+id);
-  xhttp.send();
+
+  xhttp.open("GET", "index.php?page=cart&action=add&&id="+id); 
+  xhttp.send();  
 }
 
 function izbrisiIzKosarice(id, elem) {
@@ -14,7 +15,7 @@ function izbrisiIzKosarice(id, elem) {
     var sec = elem.parentElement.parentElement.parentElement.parentElement;
     sec.remove();
   }
-  x.open("GET", "index.php?page=cart&action=delete&id="+id);
+  x.open("GET", "index.php?action=delete&id="+id);
   x.send();
 }
 

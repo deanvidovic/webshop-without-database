@@ -10,7 +10,7 @@ function printaj() {
                 <form method="POST">
                     <b>Username: </b><br><input type="text" name="username"><br><br>
                     <b>Password: </b><br><input type="password" name="password"><br><br>
-                    <input type="submit">
+                    <input class="btn btn-primary" type="submit">
                 </form>
             </div>
         </div>
@@ -26,7 +26,7 @@ if($_GET["page"] == "login") {
             printaj();
             echo "<div class='text-center text-danger'>Invalid login informations!</div>";
         } else {
-            echo "<div class='text-center text-success h3'><b>Prijavljeni ste!</b></div><br>";
+            echo "<div class='text-center text-success h3'><b>You are logged in!</b></div><br>";
             echo 
             "
             <div class='logout'>
