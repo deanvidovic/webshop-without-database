@@ -7,7 +7,7 @@
         require_once("./class/Artikl.php");
 
         $ukupnaCijena = 0;
-        $arrOfEcho = array();
+    
         
         
         if(isset($_COOKIE["cart"])) {  
@@ -20,7 +20,7 @@
                         
                             <div id='parent' class='text-center'>
                                 <section>
-                                    <img src='".$a->get_url()."'><br>
+                                    <img class='phones' src='".$a->get_url()."'><br>
                                     <b>Name: </b>" . $a->get_naziv() . " <br>
                                     <b>Price: </b>" . $a->ispis_cijena() . "<br>
                                     <!--<b>Quantity: </b> <span id='pov'>1</span>x<br>

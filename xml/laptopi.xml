@@ -1,0 +1,7 @@
+<laptops>
+    <id>1</id>
+    <name>Apple MacBook Air (M2)</name>
+    <url>art/1.jpg</url>
+    <price>180</price>
+    <category>home</category>
+</laptops>

@@ -13,7 +13,7 @@
                 <div class="col">
                     <section>
                         <div class="article-holder">
-                            <img src="'. $artikl->get_url() .'"><br>
+                            <img class="phones" src="'. $artikl->get_url() .'"><br>
                             <span><b>Name:</b> '. $artikl->get_naziv() .'</span> <br>
                             <span><b>Price:</b> '. $artikl->ispis_cijena() .'</span> <br><br>
                         </div>
@@ -27,7 +27,7 @@
                 <div class="col">
                     <section>
                         <div class="article-holder">
-                            <img src="'. $artikl->get_url() .'"><br>
+                            <img class="phones" src="'. $artikl->get_url() .'"><br>
                             <span><b>Name:</b> '. $artikl->get_naziv() .'</span> <br>
                             <span><b>Price:</b> '. $artikl->ispis_cijena() .'</span> <br><br>
                             <button class="btn btn-primary" onclick="dodajUKosaricu('. $artikl->get_id().')">Dodaj u kosaricu</button>
