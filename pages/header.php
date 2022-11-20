@@ -14,7 +14,14 @@
                     <a href="?page=shop">Shop</a>
                     <a href="?page=cart">Cart</a>
                     <a href="?page=contact">Contact</a>
-                    <a href="?page=login">Login</a>
+                    <!-- <a href="?page=login">Login</a> -->
+                    <?php
+                        if(isset($_SESSION["username"]) && $_SESSION["username"] == "admin") {
+                            echo '<a href="?page=login" class="text-danger">Admin</a>';
+                        } else {
+                            echo '<a href="?page=login">Login</a>';
+                        }
+                    ?>
                 </div>
             </span>
         </div>

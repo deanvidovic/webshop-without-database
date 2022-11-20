@@ -4,6 +4,11 @@ $page = $_GET["page"];
 $arrayOfFileNames = array();
 $fileList = glob('pages/*');
 
+if($page == "cart" || $page == "contact") {
+    if(!isset($_SESSION["username"]) || $_SESSION["username"] != "admin") {
+        die(header("Location: index.php?page=need_to_login"));
+    }
+}
 
 foreach($fileList as $filename){
     if(is_file($filename) && ((basename($filename) != "footer") || (basename($filename) != "header"))){
@@ -24,13 +29,6 @@ if(isset($page)) {
 }
 
 
-
-
-if($page == "cart" || $page == "contact") {
-    if(!isset($_SESSION["username"]) || $_SESSION["username"] != "admin") {
-        die(header("Location: index.php?page=need_to_login"));
-    }
-}
 
 
 
