@@ -49,9 +49,7 @@ if($_GET['page'] == "contact") {
             } else if(preg_match("/^\+3859\d\/\d{3}-\d{3,4}$/", $broj_mobitela) == false) {
                 echo "<div class='text-center text-danger'>Invalid <b>phone</b> number!</div>";;
                 $provjera = false;
-            }
-
-            if($_GET['page'] == "contact" && $_SERVER["REQUEST_METHOD"] == "POST" && $checker == true) {
+            } else if($_GET['page'] == "contact" && $_SERVER["REQUEST_METHOD"] == "POST" && $checker == true) {
                 echo 
                 "
                 <div>
@@ -63,7 +61,6 @@ if($_GET['page'] == "contact") {
                     <div class='text-success'><h6><b>Message:</b> <i>". $poruka_ispis . "</i></h6></div>
                 </div>
                 ";
-
             }
         }
 
