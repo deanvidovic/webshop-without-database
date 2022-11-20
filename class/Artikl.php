@@ -57,6 +57,13 @@ $artikli["6"] = new Artikl("6", "Samsung Galaxy S21", "./img/samsung_s21.png", "
 $artikli["7"] = new Artikl("7", "Samsung Galaxy A52", "./img/samsung_a52.png", "3000");
 $artikli["8"] = new Artikl("8", "Samsung Galaxy A72", "./img/samsung_a72.png", "3500");
 
+$xml = simplexml_load_file('xml/laptopi.xml');
+
+foreach($xml as $x) {
+    $artikli[".$x->id."] = new Artikl(strval($x->id), strval($x->name), strval($x->url), strval($x->price));
+}
+
+
 
 
 // $artikli["9"] = new Artikl("9", "Samsung Galaxy A33", "./img/samsung_a33.png", "2900");

@@ -1,7 +1,29 @@
 <laptops>
-    <id>1</id>
-    <name>Apple MacBook Air (M2)</name>
-    <url>art/1.jpg</url>
-    <price>180</price>
-    <category>home</category>
+    <laptop>
+        <id>9</id>
+        <name>Apple MacBook Air (M2)</name>
+        <url>./img/m2.png</url>
+        <price>10000</price>
+    </laptop>
+
+    <laptop>
+        <id>10</id>
+        <name>MacBook Pro</name>
+        <url>./img/macbookpro.png</url>
+        <price>10000</price>
+    </laptop>
+
+    <laptop>
+        <id>11</id>
+        <name>Apple MacBook Air (M1)</name>
+        <url>./img/m1.png</url>
+        <price>10000</price>
+    </laptop>
+
+    <laptop>
+        <id>12</id>
+        <name>HP Spectre x360 14</name>
+        <url>./img/hp.png</url>
+        <price>10000</price>
+    </laptop>
 </laptops>

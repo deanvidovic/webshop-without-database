@@ -22,6 +22,7 @@ addBrojacPosjeta();
         <main>
             <?php 
             require_once("./other/page.php"); 
+            require_once("./class/Artikl.php");
             //print_r($arrWithoutHome);
             ?>
         </main>
