@@ -18,20 +18,32 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-3">
                 <div class="home-welcome">
-                    <span><hr><h3>Iphone 14</h3><img src="./img/iphone14.png" alt=""></span>
+                    <span><hr><h3>Iphone 14</h3><a href="index.php?page=shop"><img class="ponuda" src="./img/iphone14.png" alt=""></a></span>
                     
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-3">
                 <div class="home-welcome">
-                    <span><hr><h3>Samsung Galaxy S21</h3><img src="./img/samsung_s21.png" alt=""></span>
+                    <span><hr><h3>Samsung Galaxy S21</h3><a href="index.php?page=shop"><img class="ponuda" src="./img/samsung_s21.png" alt=""></a></span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="home-welcome">
+                    <span><hr><h3>MacBook Air (M2)</h3><a href="index.php?page=shop"><img class="ponuda" src="./img/m2.png" alt=""></a></span>
+                    
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="home-welcome">
+                    <span><hr><h3>MacBook Air (M1)</h3><a href="index.php?page=shop"><img class="ponuda" src="./img/m1.png" alt=""></a></span>
                 </div>
             </div>
         </div>
-
     </div>
 
 
